@@ -1,11 +1,10 @@
-function taskBlock() {
-        let task = "original task";
+export default function taskBlock(trueOrFalse) {
+	var task = false;
+	var task2 = true;
 
-        if (true) {
-                let task = "New task";
-                console.log("Inside conditional block:" + task);
-        }
-
-        console.log("Outside conditional block:" + task);
+	if (trueOrFalse) {
+		var task = true;
+		var task2 = false;
+	}
+	return [task, task2];
 }
-taskBlock();
